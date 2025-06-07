@@ -13,14 +13,14 @@
 
 // Non Primitive datatypes (Reference datatypes)
 // Array, Objects, Functions
-const heros = ["shakitman","naagraj","doga"];
-let myObj = {
-    name: "Manan",
-    age: 21
-}
-const myFunction = function(){
-    console.log("Hello World");
-}
+// const heros = ["shakitman","naagraj","doga"];
+// let myObj = {
+//     name: "Manan",
+//     age: 21
+// }
+// const myFunction = function(){
+//     console.log("Hello World");
+// }
 
 
 // Type of value                                Result
