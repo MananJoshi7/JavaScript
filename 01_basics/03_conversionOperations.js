@@ -60,3 +60,10 @@ console.log(str3);
 // Post-increment (x++) → "Give me the old value first, then update."
 // Pre-increment (++x) → "Update first, then give me the new value."
 
+console.log(3 + 4 * 2);
+console.log((3 + 4) * 2);
+
+//  Brackets come first! ( )
+//  Powers (like squares) come before × or ÷
+//  × and ÷ come before + and -
+//  If same priority (like * and /), solve left to right.
