@@ -33,3 +33,23 @@
 //     implement [[Call]])
 // Object(native or host and                  "function"
 //     does implement [[Call]])
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive)    Heap(Non-Primitive)
+
+let myName = "Manan";
+let anoterName = myName;
+anoterName = "Joshi";
+console.log(myName);
+console.log(anoterName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+userTwo.email = "manan@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
