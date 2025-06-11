@@ -151,38 +151,79 @@ console.log(str26.strike()); // <strike>Oudated Price</strike>
 const str27 = "H2O";
 console.log(str27.sub()); // <sub>H2O</sub>
 
+// String prototype.substr()
+const str28 = "Hello World";
+console.log(str28.substr(0,5)); // Hello
+console.log(str28.substr(6)); // World
+console.log(str28.substr(-5,3)); //Wor
+
+// String prototype.substring()
+const str29 = "Hello World";
+console.log(str29.substring(0,5)); // Hello
+
+// String prototype.sup()
+const str30 = "9";
+console.log(str30.sup()); // <sup>9</sup>
+
+// String prototype.toLocalLowerCase()
+const str31 = "HELLO WORLD";
+console.log(str31.toLocaleLowerCase()); // hello world
+
+// String prototype.toLocalUpperCase()
+const str32 = "hello world";
+console.log(str32.toLocaleUpperCase()); // HELLO WORLD
+ 
+// String prototype.toString()
+const str33 = "hello";
+console.log(str33.toString());
+const num = 123;
+console.log(num.toString());
+
+// String prototype.trim()
+const str34 = "   Hello   ";
+console.log(str34.trim());
+
+// String prototype.trimEnd()
+const str35 = "   Hello   ";
+console.log(str35.trimEnd());
+
+// String prototype.trimStart()
+const str36 = "   Hello   ";
+console.log(str36.trimStart());
+
+// String prototype.valueOf()
+const str37 = "hello";
+console.log(str37.valueOf());
 
 
 
 
+// const name = "Manan";
+// const repoCount = 50;
+// // console.log(name + repoCount + " Value");
+// console.log(`My name is ${name} and my repo count is ${repoCount}`);
+
+// const gameName = new String('Manan');
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+// console.log(gameName.charAt(2));
+// console.log(gameName.indexOf('a'));
+
+// const newString = gameName.substring(0,4);
+// console.log(newString);
+// // under a substring we can't give the negative values.
+
+// const anotherString = gameName.slice(-5,4);
+// console.log(anotherString);
+// // under a slice we can give the neagtive value too.
 
 
-const name = "Manan";
-const repoCount = 50;
-// console.log(name + repoCount + " Value");
-console.log(`My name is ${name} and my repo count is ${repoCount}`);
+// const newStringOne = "   Manan   ";
+// console.log(newStringOne);
+// console.log(newStringOne.trim());
 
-const gameName = new String('Manan');
-console.log(gameName[0]);
-console.log(gameName.__proto__);
-console.log(gameName.length);
-console.log(gameName.toUpperCase());
-console.log(gameName.charAt(2));
-console.log(gameName.indexOf('a'));
-
-const newString = gameName.substring(0,4);
-console.log(newString);
-// under a substring we can't give the negative values.
-
-const anotherString = gameName.slice(-5,4);
-console.log(anotherString);
-// under a slice we can give the neagtive value too.
-
-
-const newStringOne = "   Manan   ";
-console.log(newStringOne);
-console.log(newStringOne.trim());
-
-const url = "https://manan.com/manan%20joshi";
-console.log(url.replace('%20','-'));
-console.log(url.includes('ram'));
+// const url = "https://manan.com/manan%20joshi";
+// console.log(url.replace('%20','-'));
+// console.log(url.includes('ram'));
