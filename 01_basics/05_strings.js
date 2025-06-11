@@ -131,6 +131,27 @@ const str22 = "Hello World";
 console.log(str22.slice(6)); // "World" (from index 6 to end)
 console.log(str22.slice(0,5)); // "Hello" (index 0 to 4)
 
+// String prototype.small()
+const str23 = "Disclamer";
+console.log(str23.small()); // <small>Disclamer</small>
+
+// String prototype.split()
+const str24 = "Hello World From JavaScript";
+console.log(str24.split(" ")); // [ 'Hello', 'World', 'From', 'JavaScript' ]
+
+// String prototypr.startsWith()
+const str25 = "Hello World";
+console.log(str25.startsWith("Hello")); // True
+
+// String prototype.strike()
+const str26 = "Oudated Price";
+console.log(str26.strike()); // <strike>Oudated Price</strike>
+
+// String prototype.sub()
+const str27 = "H2O";
+console.log(str27.sub()); // <sub>H2O</sub>
+
+
 
 
 
