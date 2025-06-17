@@ -20,3 +20,10 @@ console.log(myDate.toLocaleString()); // Tue Jun 17 2025 04:40:12 GMT+0000 (Coor
                                       // 2025-06-17T04:40:12.360Z
                                       // 6/17/2025
                                       // 6/17/2025, 4:40:12 AM
+
+let myCreatedDate = new Date(2025,0,23);
+console.log(myCreatedDate.toDateString()); // Thu Jan 23 2025
+
+let myCreatedDate1 = new Date(2025, 3, 16, 4, 9);
+console.log(myCreatedDate1.toLocaleString()); // 4/16/2025, 4:09:00 AM
+
