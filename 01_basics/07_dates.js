@@ -27,3 +27,10 @@ console.log(myCreatedDate.toDateString()); // Thu Jan 23 2025
 let myCreatedDate1 = new Date(2025, 3, 16, 4, 9);
 console.log(myCreatedDate1.toLocaleString()); // 4/16/2025, 4:09:00 AM
 
+let newDate = new Date();
+console.log(newDate.getDate()); // 17
+console.log(newDate.getDay()); // 2
+console.log(newDate.getFullYear()); // 2025
+console.log(newDate.getHours()); // 6
+console.log(newDate.getMilliseconds());
+
