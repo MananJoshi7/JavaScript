@@ -57,3 +57,84 @@ const obj3 = {4:"e", 5:"f"};
 // const obj4 = {obj1, obj2, obj3}
 const obj4 = {...obj1,... obj2,... obj3};
 console.log(obj4);
+
+
+
+// Test
+// Basic Object Operations
+const user = {
+    id:"1001",
+    username:"js_developer",
+    isActive: true
+}
+user.lastlogin = "19-06-2025";
+console.log(user);
+console.log(user.propertyIsEnumerable('username'));
+Object.freeze(user);
+user.isActive = false;
+console.log(user);
+
+
+// Problem 2: Object Prototype Methods
+const product = {
+  name: "Laptop",
+  price: 99999,
+  quantity: 5,
+  toString() {
+    return `${this.name} - ₹${this.price.toLocaleString('en-IN')} ${this.quantity} avaiable`  
+    }
+};
+console.log(product.toString());
+
+// Task 2.1: Implement toString() to show "Laptop - ₹99,999 (5 available)"
+// Task 2.2: Format price using toLocaleString('en-IN')
+// Task 2.3: Check if constructor is Object
+
+const book = {
+  title: "JavaScript Essentials",
+  author: "Jane Doe",
+  price: 899,
+  toString() {
+        return `"Book: ${this.title} by ${this.author} (₹${this.price})"`
+  }
+  // Add a toString() method that returns:
+  // "Book: JavaScript Essentials by Jane Doe (₹899)"
+};
+console.log(book.toString());
+
+const smartphone = {
+  brand: "Samsung",
+  model: "Galaxy S23",
+  price: 79900,
+  toString() {
+    return `"${this.brand} ${this.model} - ₹${this.price.toLocaleString('en-In')}"`
+  }
+  // Add a method that returns:
+  // "Samsung Galaxy S23 - ₹79,900"
+};
+console.log(smartphone.toString());
+
+
+
+// Problem 3: Nested Objects and Merging
+const userDetails = {
+  contact: {
+    email: "user@example.com",
+    phones: {
+      mobile: "1234567890",
+      home: "0987654321"
+    }
+  }
+};
+
+const preferences = {
+  theme: "dark",
+  notifications: true
+};
+console.log(userDetails.contact.phones.mobile);
+const merge = {...userDetails, ...preferences};
+console.log(merge);
+console.log(Object.keys(merge));
+// Task 3.1: Access mobile phone number using optional chaining
+// Task 3.2: Merge userDetails and preferences (preserve nested structure)
+// Task 3.3: List all top-level keys of the merged object
