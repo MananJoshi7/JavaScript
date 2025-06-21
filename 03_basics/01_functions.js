@@ -93,3 +93,32 @@ function form(username = "Guest"){
 }
 console.log(form());
 console.log(form("Manan"))
+
+
+// ... -> spread/rest operator
+function calculateCartPrice(...num1){
+    return num1
+}
+console.log(calculateCartPrice(3,5,1));
+
+function calculateCartPrice1(val1,val2,...num1){
+    return num1
+}
+console.log(calculateCartPrice1(300,500,100));
+
+
+const user = {
+    username: "Manan",
+    price: 999
+}
+function handleObject (anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(user)
+
+
+const mynewarray = [100,200,300];
+function returnsecondvalue (getarray){
+    return getarray[1]
+}
+console.log(returnsecondvalue(mynewarray))
