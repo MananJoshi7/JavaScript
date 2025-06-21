@@ -138,3 +138,13 @@ console.log(Object.keys(merge));
 // Task 3.1: Access mobile phone number using optional chaining
 // Task 3.2: Merge userDetails and preferences (preserve nested structure)
 // Task 3.3: List all top-level keys of the merged object
+
+
+const course = {
+  course: "js in hindi",
+  price: 999,
+  courseInstructor: "ram"
+}
+// console.log(course.courseInstructor);
+const {courseInstructor:abc} = course;
+console.log(abc);
