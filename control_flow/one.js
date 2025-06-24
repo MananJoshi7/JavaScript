@@ -13,6 +13,16 @@ if(LoggedInFromEmail || LoggedInFromGoogle){    // If any of the condition becom
     console.log("User Looged In");
 }
 
+
+// Nullish Coalescing Operator (??): null undefined
+let val1;
+// val1 = 5 ?? 10   // 5
+// val1 = null ?? 10   // 10
+// val1 = undefined ?? // 15
+// val1 = null ?? 10 ?? 20 // 10
+
+console.log(val1);
+
 const number = 9;
 if(number > 10){
     console.log("Number is greater than 10");
