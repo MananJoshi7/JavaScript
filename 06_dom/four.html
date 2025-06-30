@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:black; color: #fff">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // Adding the new li without creating the function
+    // const ul = document.querySelector('.language')
+    // const newLi = document.createElement('li')
+    // newLi.textContent = "Python"
+    // ul.appendChild(newLi)
+
+    // Add the new li using the normal function
+    // function addLanguage(langName){
+    //     const ul = document.querySelector('.language')
+    //     const newLi = document.createElement('li')
+    //     newLi.textContent = langName
+    //     ul.appendChild(newLi)
+    // }
+    // addLanguage()
+
+    // Adding the new li using the arrow function
+    const addLanguage = (langName) => {
+        const ul = document.querySelector('.language')
+        const newLi = document.createElement('li')
+        newLi.textContent = langName
+        ul.appendChild(newLi)
+    }
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+    // Edit
+    const secondLi = document.querySelector('.language li:nth-child(2)')
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLi.replaceWith(newLi)
+
+    const firstLi = document.querySelector('.language li:first-child')
+    const newLi1 = document.createElement('li')
+    newLi1.textContent = "CPP"
+    firstLi.replaceWith(newLi1)
+
+    // Reomve
+    const lastLi = document.querySelector('.language li:last-child')
+    lastLi.remove()
+</script>
+</html> 
