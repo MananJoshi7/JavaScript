@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jay Shree Krishna</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const start = document.querySelector('#start').
+    addEventListener('click', () => {
+        setInterval( () => {
+            console.log("Bharat Mata Ki Jai")
+        }, 1000)
+    })
+    
+    const stop = document.querySelector('#stop').addEventListener('click', () => {
+        clearInterval(start)
+    })
+
+
+
+
+    
+    
+    // const sayDate = (str) => {
+    //     console.log(str, Date.now())
+    // }
+    // const intervalId = setInterval(sayDate, 1000, "hi")
+    // clearInterval(intervalId)
+</script>
+</html>
