@@ -81,14 +81,25 @@ async function consumePromiseFive(){
 consumePromiseFive()
 
 
-async function getAllUsers(){
-    try{
-        const respose = await fetch("https://api.github.com/users/mananjoshi7")
-        const data = await respose.json()
-        console.log(data);
-        }
-        catch(error){
-            console.log("E:", error)
-        }
-    }
-getAllUsers()
+// async function getAllUsers(){
+//     try{
+//         const respose = await fetch("https://api.github.com/users/mananjoshi7")
+//         const data = await respose.json()
+//         console.log(data);
+//         }
+//         catch(error){
+//             console.log("E:", error)
+//         }
+//     }
+// getAllUsers()
+
+fetch("https://api.github.com/users/mananjoshi7")
+.then( (respose) => {
+    return respose.json()
+} )
+.then( (data) => {
+    console.log(data)
+} )
+.catch( (error) => {
+    console.log(error)
+} )
