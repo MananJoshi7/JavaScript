@@ -1,3 +1,6 @@
+// primitives -> aisi saari values jinko copy karne par tumhe ek real copy mil jaye
+// reference  -> inko copy karne per real copy nahi milegi but aapko reference milega parent ka 
+
 "use strict"; //treat all JS code as newer version 
 
 // alert(5+4) // we are using nodejs, not browser
